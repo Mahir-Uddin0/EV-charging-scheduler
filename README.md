@@ -1,3 +1,4 @@
-# EV-charging-scheduler
-This model takes vehicle and station information and allocates specific charging slots in nearby charging stations to electric vehicles in need of charge.
-The code is written in Minizinc.
+# ⚡ EV Charging Scheduler – Constraint Programming Model (MiniZinc)
+
+This project implements an Electric Vehicle (EV) charging scheduler using **MiniZinc**. It schedules EVs to available charging stations over time slots while minimizing the total travel distance. The model considers constraints like battery level, charging rate, station availability, power and plug capacities.
+
