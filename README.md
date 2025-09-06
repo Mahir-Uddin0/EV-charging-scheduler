@@ -60,7 +60,7 @@ All input values are defined in a separate `.dzn` data file. Example variables:
 array[1..n_vehicles, 1..n_stations, 1..n_timeslots] of var 0..1: assign;
 ```
 ## Derived Values
-needs_charge\n
-demand\n
-distance\n
+- needs_charge
+- demand
+- distance
 
