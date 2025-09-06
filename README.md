@@ -58,3 +58,9 @@ All input values are defined in a separate `.dzn` data file. Example variables:
 
 ```minizinc
 array[1..n_vehicles, 1..n_stations, 1..n_timeslots] of var 0..1: assign;
+```
+## Derived Values
+needs_charge
+demand
+distance
+
