@@ -81,3 +81,26 @@ array[1..n_vehicles, 1..n_stations, 1..n_timeslots] of var 0..1: assign;
 The primary objective is to **minimize the total charging time and maximize station utilization**, while ensuring all constraints are satisfied.  
 
 ---
+
+## 📥 Example Input (Playground.dzn)
+
+```minizinc
+n_vehicles = 15;
+n_stations = 5;
+n_timeslots = 6;
+
+battery_level = [40, 80, 30, 90, 50, 20, 95, 85, 35, 100, 75, 25, 60, 88, 92];
+battery_capacity = [100,100,100,100,100,100,100,100,100,100,100,100,100,100,100];
+charging_rate = [10,10,10,10,10,10,10,10,10,10,10,10,10,10,10];
+
+power_capacity = [40, 50, 35, 60, 45];
+slot_capacity = [2, 4, 3, 5, 3];
+
+available_slots = array2d(1..5, 1..6,
+[
+  true,  true,  true,  true,  false, false,   % Station 1
+  true,  true,  true,  true,  true,  true,    % Station 2
+  true,  false, true,  true,  false, true,    % Station 3
+  true,  true,  true,  true,  true,  true,    % Station 4
+  true,  true,  false, true,  true,  false    % Station 5
+]);
