@@ -76,3 +76,8 @@ array[1..n_vehicles, 1..n_stations, 1..n_timeslots] of var 0..1: assign;
 - Charging continuity: once a vehicle starts charging, it continues in subsequent slots.  
 
 ---
+
+## 🎯 Objective
+The primary objective is to **minimize the total charging time and maximize station utilization**, while ensuring all constraints are satisfied.  
+
+---
