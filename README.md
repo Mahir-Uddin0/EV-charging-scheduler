@@ -64,3 +64,15 @@ array[1..n_vehicles, 1..n_stations, 1..n_timeslots] of var 0..1: assign;
 - demand
 - distance
 
+---
+
+## 🔒 Constraints
+- Vehicles that do not need charging are not assigned.  
+- A vehicle’s total received charge must meet or exceed its demand.  
+- Total charging rate per station per time slot ≤ station power capacity.  
+- Number of vehicles per station per time slot ≤ slot capacity.  
+- If a station is unavailable in a time slot, no vehicles are assigned.  
+- A vehicle can only be assigned to one station per time slot.  
+- Charging continuity: once a vehicle starts charging, it continues in subsequent slots.  
+
+---
