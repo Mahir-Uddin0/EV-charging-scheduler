@@ -115,7 +115,7 @@ available_slots = array2d(1..5, 1..6,
 
 ## Example Output
 
-```
+
 EV Charging Schedule (Tabular Format):
 ---------------------------------------
 Vehicle		| Status		| Station	| Time Slot(s)
@@ -136,4 +136,4 @@ Vehicle 13	| Charging Required	| Station 2	| Slot 3-6
 Vehicle 14	| Sufficient Battery	| N/A		| N/A
 Vehicle 15	| Sufficient Battery	| N/A		| N/A
 ----------
-```
+
