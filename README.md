@@ -111,3 +111,28 @@ available_slots = array2d(1..5, 1..6,
   true,  true,  true,  true,  true,  true,    % Station 4
   true,  true,  false, true,  true,  false    % Station 5
 ]);
+
+## Example Output
+
+```
+EV Charging Schedule (Tabular Format):
+---------------------------------------
+Vehicle		| Status		| Station	| Time Slot(s)
+--------	|-----------------------|---------------|----------------
+Vehicle 1	| Charging Required	| Station 4	| Slot 3-6
+Vehicle 2	| Sufficient Battery	| N/A		| N/A
+Vehicle 3	| Charging Required	| Station 4	| Slot 3-6
+Vehicle 4	| Sufficient Battery	| N/A		| N/A
+Vehicle 5	| Charging Required	| Station 4	| Slot 2-6
+Vehicle 6	| Charging Required	| Station 2	| Slot 1-6
+Vehicle 7	| Sufficient Battery	| N/A		| N/A
+Vehicle 8	| Sufficient Battery	| N/A		| N/A
+Vehicle 9	| Charging Required	| Station 2	| Slot 2-6
+Vehicle 10	| Sufficient Battery	| N/A		| N/A
+Vehicle 11	| Sufficient Battery	| N/A		| N/A
+Vehicle 12	| Charging Required	| Station 2	| Slot 1-6
+Vehicle 13	| Charging Required	| Station 2	| Slot 3-6
+Vehicle 14	| Sufficient Battery	| N/A		| N/A
+Vehicle 15	| Sufficient Battery	| N/A		| N/A
+----------
+```
