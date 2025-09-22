@@ -1,11 +1,11 @@
 # ⚡ EV Charging Scheduler – Constraint Programming Model (MiniZinc)
 
 ## Introduction
-As the adoption of Electric Vehicles (EVs) increases globally, efficient charging management has become a major challenge. EVs need to be charged at appropriate times and locations while ensuring that charging stations are not overloaded. Traditional manual or first-come-first-serve scheduling is not sufficient for large-scale operations such as ride-sharing fleets, logistics companies, or smart city infrastructures.  
+In the future of smart mobility, where companies like Uber may deploy fleets of self-driving electric vehicles (EVs) across cities, efficient charging management becomes critical. These vehicles must decide when and where to charge, while stations need to manage limited plugs and power capacity. Manual monitoring is not scalable — an automated scheduling system is essential.  
 
-To address this, automated AI-driven scheduling systems are required. These systems must account for real-world constraints like limited charging plugs, varying power capacities, and fluctuating battery levels of EVs. Moreover, optimizing charging schedules can reduce energy costs, minimize vehicle downtime, and extend battery health.  
+This project implements a **smart EV charging scheduler** using **MiniZinc** and constraint programming. The system takes real-time inputs such as vehicle battery levels, charging demands, station capacities, availability, and distances, then produces an optimized schedule. Low-battery EVs are automatically assigned to suitable stations and time slots, ensuring that all constraints are respected while minimizing total travel distance.  
 
-This project presents a **constraint programming approach** using **MiniZinc** to solve the EV charging scheduling problem. By modeling vehicles, stations, and charging slots as decision variables, the system automatically generates an optimized charging plan.
+By simulating how such a system would work in practice, this project demonstrates how constraint programming can help make EV charging more autonomous, efficient, and scalable for real-world applications like ride-sharing fleets, logistics networks, and smart city infrastructures.
 
 ---
 
