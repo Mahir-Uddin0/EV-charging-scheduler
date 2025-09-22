@@ -111,6 +111,7 @@ available_slots = array2d(1..5, 1..6,
   true,  true,  true,  true,  true,  true,    % Station 4
   true,  true,  false, true,  true,  false    % Station 5
 ]);
+```
 
 ## Example Output
 
